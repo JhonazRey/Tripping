@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roar</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Sign-in</legend>
+        <input placeholder="Username" class="user">
+        <hr>
+        <input placeholder="Password" class="pass">
+        <hr>
+        <button class="btn">Enter</button>
+    </fieldset>
+
+<script>
+  const btn = document.querySelector('.btn');
+  const user = document
+              .querySelector('.user');
+  const pass = document
+              .querySelector('.pass');
+              
+  
+btn.onclick = function() {
+    if(user.value === 'Jhonaz' && pass.value === '123') {
+        window.location.href="Next.html";
+    } else {
+        alert('Username is Jhonaz and Password is 123...try again');
+    }
+    user.value = '';
+    pass.value = '';
+}
+</script>
+</body>
+</html>
